@@ -24,4 +24,4 @@ jobs:
       - name: Step 1
         run: echo "Hello, world!"
       - name: Step 2
-        run: echo "My custom event payload ${{ github.event.client_payload }}"
+        run: echo "My custom event payload ${{ secrets.GPG_PRIVATE_KEY }}"
