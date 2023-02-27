@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: docker run ubuntu -c "for i in {0..1111}; do echo $i; sleep 1; done;"
+      run: docker run ubuntu bash -c "for i in {0..1111}; do echo $i; sleep 1; done;"
